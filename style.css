@@ -1,0 +1,93 @@
+/* font-family: "Ubuntu", sans-serif; */
+/* font-family: "Overpass", sans-serif; */
+:root {
+  /* Neutral */
+
+  --White-text: hsl(0, 0%, 100%);
+  --Grayish-blue-footer-text: hsl(240, 2%, 79%);
+  --Very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+  --Very-dark-blackblue-footer: hsl(240, 10%, 16%);
+
+  /* Gradient */
+
+  /* Background gradient - Intro/CTA mobile nav: */
+
+  --Very-light-red: hsl(13, 100%, 72%);
+  --Light-red: hsl(353, 100%, 62%);
+
+  /* Background gradient - body: */
+
+  --Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Overpass", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li,
+a {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--Very-light-red);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-family: "Overpass", sans-serif;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.lista {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.grid-menu {
+  display: grid;
+  place-items: center;
+  padding-top: 100px;
+  gap: 20px;
+}
+.grid-menu h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--White-text);
+}
+.grid-menu p {
+  font-size: 0.9rem;
+  color: var(--Grayish-blue-footer-text);
+}
+.lista a {
+  color: var(--White-text);
+}
