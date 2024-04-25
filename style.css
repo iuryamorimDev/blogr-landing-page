@@ -161,6 +161,7 @@ a {
   width: 10px;
   height: 8px;
   background-image: url(./images/icon-arrow-light.svg);
+  cursor: pointer;
 }
 
 /* header */
