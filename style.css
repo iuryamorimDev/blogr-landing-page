@@ -41,6 +41,9 @@ p {
   margin: 0;
   overflow-wrap: break-word;
 }
+* {
+  overflow-wrap: break-word;
+}
 
 img {
   display: block;
@@ -66,6 +69,7 @@ a {
   padding-bottom: 80px;
   padding-left: 60px;
   padding-right: 60px;
+  border-bottom-left-radius: 5rem;
   font-family: "Overpass", sans-serif;
 }
 .menu {
@@ -153,27 +157,38 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
 }
 
-.lista li::after {
+.lista .drop::after {
   content: "";
   display: inline-flex;
   width: 10px;
-  height: 8px;
+  height: 7px;
   background-image: url(./images/icon-arrow-light.svg);
   cursor: pointer;
 }
 
+/* dropdown */
+.drop {
+  display: block;
+}
+
+/* dropdown */
+
 /* header */
-@media (max-width: 604px) {
+@media (max-width: 640px) {
   .lista {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 18px;
   }
   .header {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .grid-menu h1 {
     font-size: 2.5rem;
@@ -183,4 +198,17 @@ a {
     font-size: 1.2rem;
     text-align: center;
   }
+  .grid-menu {
+    padding-top: 50px;
+  }
+}
+
+/* main */
+.divisao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding-left: 40px;
+  gap: 90px;
+  overflow: hidden;
 }
