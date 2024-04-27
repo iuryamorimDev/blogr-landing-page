@@ -1,1 +1,13 @@
-
+:root {
+  --overpass--300-600: "Overpass", sans-serif;
+  --ubuntu-400-500-700: "Ubuntu", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+nav {
+  display: none;
+}
