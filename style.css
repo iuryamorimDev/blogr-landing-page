@@ -187,9 +187,9 @@ footer li a {
 .attribution a {
   color: white;
   font-family: var(--overpass--300-600);
-  font-weight: 300;
+  font-weight: 400;
 }
 .attribution p {
   font-family: var(--overpass--300-600);
-  font-weight: 300;
+  font-weight: 400;
 }
