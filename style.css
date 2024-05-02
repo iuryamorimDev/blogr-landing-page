@@ -303,3 +303,141 @@ a {
 .open img {
   transform: rotate(180deg);
 }
+@media screen and (min-width: 992px) {
+  header {
+    display: grid;
+    grid-template-columns: 10% 85%;
+    width: 90%;
+    margin: auto;
+  }
+  #hamburger-icon {
+    display: none;
+  }
+  .divider {
+    display: none;
+  }
+  nav {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    left: 0;
+    width: 100%;
+    gap: 10em;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .nav-link {
+    width: 20%;
+    margin: 0;
+  }
+  .nav-links button {
+    margin: 0;
+    width: 30%;
+    color: rgba(255, 255, 255, 0.713);
+  }
+  .nav-btns {
+    flex-direction: row;
+    width: 30%;
+    justify-content: end;
+    gap: 0;
+  }
+  .nav-btns button:nth-of-type(1) {
+    width: 50%;
+    color: rgba(255, 255, 255, 0.755);
+    padding: 0.8em;
+  }
+  .nav-btns button:nth-of-type(2) {
+    width: 50%;
+    background-image: none;
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+  }
+  .nav-link img {
+    content: url(./images/icon-arrow-light.svg);
+  }
+  .nav-link {
+    position: relative;
+  }
+  .nav-link div {
+    /* display: block; */
+    position: absolute;
+    background-color: white;
+    right: 1;
+    margin-top: 1em;
+    width: max-content;
+    padding-right: 3em;
+  }
+  .nav-link li {
+    text-align: start;
+  }
+  nav button:hover {
+    text-decoration: underline;
+  }
+  .nav-btns button:nth-of-type(2):hover {
+    text-decoration: none;
+    background: none;
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+  }
+  .nav-link a:hover {
+    color: hsl(240, 10%, 16%);
+    font-weight: 700;
+  }
+  .cta {
+    margin-top: 5em;
+  }
+  .cta h1 {
+    font-size: 3em;
+  }
+  .cta p {
+    color: rgba(255, 255, 255, 0.761);
+  }
+  .btns {
+    width: 30%;
+  }
+  .btns button:nth-of-type(1):hover {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+  }
+  .btns button:nth-of-type(2):hover {
+    background-color: white;
+    color: hsl(355, 100%, 66%);
+  }
+  .sect-2 img,
+  .sect-3 img,
+  .sect-4 img {
+    width: fit-content;
+  }
+  .sect-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 90%;
+    width: 100%;
+  }
+  .sect-2 img {
+    content: url(./images/illustration-editor-desktop.svg);
+    width: 120%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: flex-end;
+  }
+  .sect-2 .title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 2em;
+    align-self: end;
+  }
+  .sect-2 .info {
+    margin: 0 auto;
+  }
+  .sect-3 img {
+    margin: 0;
+  }
+}
